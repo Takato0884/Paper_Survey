@@ -14,7 +14,7 @@ In this work we study the problem of emotion recognition under the prism of pref
 
 ## ３．技術や手法のキモはどこ？
 
-## ４．技術や手法のキモはどこ？
+## ４．どうやって有効だと検証した？
 
 ## ５．議論はある？
 
