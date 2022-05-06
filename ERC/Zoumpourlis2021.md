@@ -1,6 +1,6 @@
 # Pairwise Ranking Network for Affect Recognition
 
-【Authers】Georgios Zoumpourlis, Ioannis Patras  
+【Authors】Georgios Zoumpourlis, Ioannis Patras  
 【Conference or journal】ACII 2021  
 【Submission】2021
 
