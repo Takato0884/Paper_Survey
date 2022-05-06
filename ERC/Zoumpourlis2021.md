@@ -2,7 +2,7 @@
 
 【Authors】Georgios Zoumpourlis, Ioannis Patras  
 【Conference or journal】ACII 2021  
-【Submission】2021
+【Submission】2021  
 【URL】https://ieeexplore.ieee.org/abstract/document/9597392  
 
 【Abstract】  
