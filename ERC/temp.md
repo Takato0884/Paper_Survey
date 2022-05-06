@@ -1,9 +1,9 @@
 # Rapport with Virtual Agents: What Do Human Social Cues and Personality Explain?
 
-【Authors】
-【Conference or journal】
-【Submission】
-【URL】
+【Authors】Aleksandra Cerekovic; Oya Aran; Daniel Gatica-Perez  
+【Conference or journal】IEEE Transactions on Affective Computing (Volume: 8, Issue: 3, July-Sept. 1 2017)  
+【Submission】2017  
+【URL】https://ieeexplore.ieee.org/document/7439777  
 
 【Abstract】
 
