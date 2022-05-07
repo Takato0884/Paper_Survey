@@ -1,7 +1,7 @@
 # The Ordinal Nature of Emotions: An Emerging Approach
 
 【Authors】Georgios N. Yannakakis; Roddy Cowie; Carlos Busso  
-【Conference or journal】IEEE Transactions on Affective Computing (Volume: 12, Issue: 1, Jan.-March 1 2021)  
+【Publisher】IEEE Transactions on Affective Computing (Volume: 12, Issue: 1, Jan.-March 1 2021)  
 【Submission】2021    
 【URL】https://ieeexplore.ieee.org/document/8521685  
 
