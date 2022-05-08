@@ -20,7 +20,7 @@ In this work we study the problem of emotion recognition under the prism of pref
 
 ## ３．技術や手法のキモ
 
-![Model](../../image/Zoumpourlis2021/1.png)
+![Model](../image/Zoumpourlis2021/1.png)
 
 ## ４．主張の有効性検証
 
