@@ -22,6 +22,9 @@ In this work we study the problem of emotion recognition under the prism of pref
 
 ![Model](../image/Zoumpourlis2021/1.png)
 
+マルチタスクとして，元々のタスクにpair-wiseランキングのサブタスクを追加する．
+pair-wiseランキングのために新たにデータを取得する必要性がなく，既存のデータセットにサブタスクを追加するだけで，性能を向上できる点がキモ．
+
 ## ４．主張の有効性検証
 
 ## ５．議論すべき点
