@@ -17,8 +17,12 @@ Emotion detection in conversations is a necessary step for a number of applicati
 
 DialogueRNNは3つのコンポーネント(Global GRU, Party GRU, Emotion GRU)から構成される．Global GRUは，対話全体のコンテキスト(Global State)を，Party GRUは，対話における各話者の状態(Party State)を，Emotion GRUは，発話者の感情状態をそれぞれ追跡する．  
 
-### Global GRU
+### Global GRU  
+tにおける発話者の状態(Speaker State) $q_{s\left(u_{t}\right), t-1}$とtにおける発話の埋め込み表現 $u_{t}$を用いて，tにおけるGlobal State $g_{t}$を更新する．  
 $$g_{t}=G R U_{\mathcal{G}}\left(g_{t-1},\left(u_{t} \oplus q_{s\left(u_{t}\right), t-1}\right)\right)$$  
+
+### Speaker GRU(Party GRU)  
+tの発話との関連度を考慮して，過去のGlobal State $[g_{1}, g_{2}, \ldots, g_{t-1}]$の重み$\alpha$を得る．次に，過去のGlobal Stateの重み付き和を計算して，tの発話に関連する過去のGlobal State $c_{t}$を得る.  
 
 $$
 \begin{aligned}
@@ -27,6 +31,8 @@ $$
 c_{t} &=\alpha\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]^{T}
 \end{aligned}
 $$  
+
+tの発話に関連する過去のGlobal State $c_{t}$とtにおける発話 $u_{t}$を用いて，tにおける発話者の状態 $q_{s\left(u_{t}\right), t}$を更新する．
 
 $$
 q_{s}\left(u_{t}\right), t=G R U_{\mathcal{P}}\left(q_{s}\left(u_{t}\right), t-1,\left(u_{t} \oplus c_{t}\right)\right)
@@ -42,14 +48,6 @@ $$
 
 $$
 e_{t}=G R U_{\mathcal{E}}\left(e_{t-1}, q_{s}\left(u_{t}\right), t\right)
-$$  
-
-$$
-\begin{aligned}
-l_{t} &=\operatorname{ReLU}\left(W_{l} e_{t}+b_{l}\right) \\
-\mathcal{P}_{t} &=\operatorname{softmax}\left(W_{s \max } l_{t}+b_{s \max }\right) \\
-\hat{y_{t}} &=\underset{i}{\operatorname{argmax}}\left(\mathcal{P}_{t}[i]\right)
-\end{aligned}
 $$
 ## ４．主張の有効性検証  
 ![Model](../image/Majumder2019/2.png)
