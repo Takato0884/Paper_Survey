@@ -15,16 +15,42 @@ Emotion detection in conversations is a necessary step for a number of applicati
 ## ３．技術や手法のキモ  
 ![Model](../image/Majumder2019/1.png)  
 
+DialogueRNNは3つのコンポーネント(Global GRU, Party GRU, Emotion GRU)から構成される．Global GRUは，対話全体のコンテキスト(Global State)を，Party GRUは，対話における各話者の状態(Party State)を，Emotion GRUは，発話者の感情状態をそれぞれ追跡する．  
+
+### Global GRU
 $$g_{t}=G R U_{\mathcal{G}}\left(g_{t-1},\left(u_{t} \oplus q_{s\left(u_{t}\right), t-1}\right)\right)$$  
 
 $$
-\begin
-\alpha &=\operatorname{softmax}\left(u_{t}^{T} W_{\alpha}\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]\right)\\
-\operatorname{softmax}(x) &=\left[e^{x_{1}} / \Sigma_{i} e^{x_{i}}, e^{x_{2}} / \Sigma_{i} e^{x_{i}}, \ldots\right]\\
+\begin{aligned}
+\alpha &=\operatorname{softmax}\left(u_{t}^{T} W_{\alpha}\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]\right) \\
+\operatorname{softmax}(x) &=\left[e^{x_{1}} / \Sigma_{i} e^{x_{i}}, e^{x_{2}} / \Sigma_{i} e^{x_{i}}, \ldots\right] \\
 c_{t} &=\alpha\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]^{T}
-\end
+\end{aligned}
+$$  
+
+$$
+q_{s}\left(u_{t}\right), t=G R U_{\mathcal{P}}\left(q_{s}\left(u_{t}\right), t-1,\left(u_{t} \oplus c_{t}\right)\right)
 $$
 
+$$
+\forall i \neq s\left(u_{t}\right), q_{i, t}=q_{i, t-1}
+$$
+
+$$
+\forall i \neq s\left(u_{t}\right), q_{i, t}=G R U_{\mathcal{L}}\left(q_{i, t-1},\left(v_{i, t} \oplus c_{t}\right)\right)
+$$
+
+$$
+e_{t}=G R U_{\mathcal{E}}\left(e_{t-1}, q_{s}\left(u_{t}\right), t\right)
+$$  
+
+$$
+\begin{aligned}
+l_{t} &=\operatorname{ReLU}\left(W_{l} e_{t}+b_{l}\right) \\
+\mathcal{P}_{t} &=\operatorname{softmax}\left(W_{s \max } l_{t}+b_{s \max }\right) \\
+\hat{y_{t}} &=\underset{i}{\operatorname{argmax}}\left(\mathcal{P}_{t}[i]\right)
+\end{aligned}
+$$
 ## ４．主張の有効性検証  
 ![Model](../image/Majumder2019/2.png)
 ![Model](../image/Majumder2019/3.png)
