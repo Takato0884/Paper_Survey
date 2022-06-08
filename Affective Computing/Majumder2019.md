@@ -16,11 +16,11 @@ Emotion detection in conversations is a necessary step for a number of applicati
 ![Model](../image/Majumder2019/1.png)  
 
 $g_{t}=G R U_{\mathcal{G}}\left(g_{t-1},\left(u_{t} \oplus q_{s\left(u_{t}\right), t-1}\right)\right)$  
-\begin{aligned}
+$\begin{aligned}
 \alpha &=\operatorname{softmax}\left(u_{t}^{T} W_{\alpha}\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]\right)\\
 \operatorname{softmax}(x) &=\left[e^{x_{1}} / \Sigma_{i} e^{x_{i}}, e^{x_{2}} / \Sigma_{i} e^{x_{i}}, \ldots\right]\\
 c_{t} &=\alpha\left[g_{1}, g_{2}, \ldots, g_{t-1}\right]^{T}
-\end{aligned}
+\end{aligned}$
 ## ４．主張の有効性検証  
 ![Model](../image/Majumder2019/2.png)
 ![Model](../image/Majumder2019/3.png)
