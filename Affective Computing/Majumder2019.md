@@ -13,7 +13,9 @@ Emotion detection in conversations is a necessary step for a number of applicati
 ## ２．問題設定と解決した点  
 従来の対話状況における感情推定モデルは，発話の時系列情報の活用に注力しており，話者情報(誰の発話か)を使用していなかった．これは，我々の対話理解と乖離しており，対話理解のための機械学習モデルの進歩の足枷となっている．DialogueRNNは，対話全体のコンテキストと自身の発話を用いて，ユーザーの感情状態を更新する"Speaker GRU"というコンポーネントを採用することで，この課題を解決した．
 ## ３．技術や手法のキモ  
-![Model](../image/Majumder2019/1.png)
+![Model](../image/Majumder2019/1.png)  
+
+$g_{t}=G R U_{\mathcal{G}}\left(g_{t-1},\left(u_{t} \oplus q_{s\left(u_{t}\right), t-1}\right)\right)$
 ## ４．主張の有効性検証  
 ![Model](../image/Majumder2019/2.png)
 ![Model](../image/Majumder2019/3.png)
