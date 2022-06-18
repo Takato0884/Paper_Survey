@@ -15,12 +15,8 @@ Document-level relation extraction (RE) poses new challenges compared to its sen
 "関係性"や"エンティティペア"に応じて閾値が異なる場合に，従来的なグローバル（共通の単一な）閾値では対応できない．そこで，この研究ではthreshold(TH)クラスを追加した．THクラス対する確率値は，他のクラスと同様にエンティティごとに計算される．さらに，正解クラスに対する確率値がTHクラスに対する確率値よりも大きく，不正解クラスに対する確率値がTHクラスに対する確率値よりも小さくなる損失を使用することで，適応的な閾値を実現した．  
 ![Model](../image/Zhou2020/Fig3.png)
 ## ３．技術や手法のキモ  
-適応的な閾値のために次のような損失関数を採用した．
-$\begin{aligned}
-\mathcal{L}_{1} &=-\sum_{r \in \mathcal{P}_{T}} \log \left(\frac{\exp \left(\operatorname{logit}_{r}\right)}{\sum_{r^{\prime} \in \mathcal{P}_{T} \cup\{\mathrm{TH}\}} \exp \left(\operatorname{logit}_{r^{\prime}}\right)}\right) \\
-\mathcal{L}_{2} &=-\log \left(\frac{\exp \left(\operatorname{logit}_{\mathrm{TH}}\right)}{\sum_{r^{\prime} \in \mathcal{N}_{T} \cup\{\mathrm{TH}\}} \exp \left(\operatorname{logit}_{r^{\prime}}\right)}\right) \\
-\mathcal{L} &=\mathcal{L}_{1}+\mathcal{L}_{2} .
-\end{aligned}$
+適応的な閾値のために次のような損失関数を採用した．  
+
 ## ４．主張の有効性検証
 ## ５．議論すべき点
 ## ６．次に読むべき論文
