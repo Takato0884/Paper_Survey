@@ -16,7 +16,7 @@ Document-level relation extraction (RE) poses new challenges compared to its sen
 ![Model](../image/Zhou2020/Fig3.png)
 ## ３．技術や手法のキモ  
 適応的な閾値のために次のような損失関数を採用した．  
-
+![Model](../image/Zhou2020/Eq_loss.png)
 ## ４．主張の有効性検証
 ## ５．議論すべき点
 ## ６．次に読むべき論文
