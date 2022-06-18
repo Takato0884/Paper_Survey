@@ -27,6 +27,15 @@ $\mathcal{P_N}$は，あるエンティティペアの関係性クラス（不�
 ![Model](../image/Zhou2020/pooling.png)  
 
 ただし，すべてのエンティティから$i$番目のエンティティに向かうアテンション（エンティティが複数回登場する場合は，その平均）を$A^E_i$とする．
-## ４．主張の有効性検証
-## ５．議論すべき点
-## ６．次に読むべき論文
+## ４．主張の有効性検証  
+![Model](../image/Zhou2020/Table3.png) 
+
+![Model](../image/Zhou2020/Table4.png) 
+
+![Model](../image/Zhou2020/Table5.png) 
+
+![Model](../image/Zhou2020/Table6.png) 
+
+![Model](../image/Zhou2020/Fig4.png) 
+
+従来手法との比較及びアブレーションテストによって，有効性を検証した．
