@@ -60,6 +60,18 @@ $$
 
 ![Model](../image/Luong2015/local.png)  
 
-## ４．主張の有効性検証
-## ５．議論すべき点
-## ６．次に読むべき論文
+Loacal attentionでは，sourceの一部の隠れ状態だけを用いて，アテンションを求める．事前にsourceの一部の隠れ状態の位置$p_t$を決めておく方法をMonotonic alignmentと呼び，計算によって求める方法をPredictive alignmentと呼ぶ．  
+
+![Model](../image/Luong2015/input_feeding.png)  
+
+さらに，過去のアテンション情報を使用できるようにしたものを Input-feeding Approachと呼ぶ．
+
+## ４．主張の有効性検証  
+
+![Model](../image/Luong2015/learning_curve.png)  
+
+![Model](../image/Luong2015/result.png)  
+
+![Model](../image/Luong2015/length_and_attention_type.png)  
+
+さまざまなアテンション手法を持つRNNモデルと従来のモデル（アテンションなし）の比較を行った．これらの結果，アテンションが精度，学習速度，長文の翻訳などの点において有効であることが示された．
