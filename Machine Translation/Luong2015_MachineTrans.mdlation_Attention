@@ -14,6 +14,8 @@ An attentional mechanism has lately been used to improve neural machine translat
 ## ２．問題設定と解決した点  
 ニューラル機械翻訳において，どのようなアテンションが有効であるかを検証した研究はないため，この研究ではそれを明らかにした．
 ## ３．技術や手法のキモ  
+![Model](../image/Loung2015/global.png)  
+![Model](../image/Loung2015/local.png)  
 アテンションをGlobal attentionとLocal attentionの2つに大別した．
 ## ４．主張の有効性検証
 ## ５．議論すべき点
