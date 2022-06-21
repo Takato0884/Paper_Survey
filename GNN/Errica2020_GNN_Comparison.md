@@ -15,6 +15,22 @@ As such, several Graph Neural Network models have been developed to effectively 
 GNNは様々な分野で一般的に使用される方法になったにも関わらず，実験手順は厳密性に欠け，再現性に乏しいことがしばしばある．この研究では，この現状を踏まえて，再現性のある実験をするために避けるべき手法を紹介する．また，統一的なフレームワークを用いた実験により，9つのデータセットで，5つの有名なモデルの公平な再評価を行った．
 ## ３．技術や手法のキモ  
 
-## ４．主張の有効性検証
-## ５．議論すべき点
-## ６．次に読むべき論文
+![Model](../image/Errica2020/GNN_evaluation.png)  
+
+GNNの有名な5つの論文を精査して，再現実験に必要な項目を満たしているか確認した．その結果，ほとんどのモデルで実験設定が不十分であることが示された．
+
+![Model](../image/Errica2020/dataset.png)  
+
+![Model](../image/Errica2020/framework.png)  
+
+各モデルを公平に比較するために統一的なフレームワークを用いて，9つのデータセットで検証を行った．
+
+## ４．主張の有効性検証  
+
+![Model](../image/Errica2020/result_chem.png)  
+
+![Model](../image/Errica2020/result_sci.png)  
+
+![Model](../image/Errica2020/comparing.png)  
+
+実験の結果，化学系のタスクでは，GNNが構造情報をほとんど活用できていないことが分かった．さらに，ほとんどのモデルで，論文と同等の精度を再現できないことが示された．
