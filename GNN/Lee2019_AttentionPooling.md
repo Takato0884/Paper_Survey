@@ -17,7 +17,18 @@ Advanced methods of applying deep learning to structured data such as graphs hav
 ## ３．技術や手法のキモ  
 
 ![Model](../image/Lee2019/Fig1.PNG)  
+本研究のキモであるSAGPoolは，畳み込み処理の後に各ノードの重要度を計算し，上位k個のノードのみを残すことでダウンサンプリングを行うプーリング法である．  
 
-## ４．主張の有効性検証
-## ５．議論すべき点
-## ６．次に読むべき論文
+![Model](../image/Lee2019/Fig2.PNG)  
+このSAGPoolをどこで行うかに関して，Global Pooling ArchitectureとHierarchical Pooling Architectureの２種類を提案している． 
+## ４．主張の有効性検証  
+
+![Model](../image/Lee2019/Table3.PNG)  
+化学分野におけるグラフ分類データセットで提案手法を評価した．２種類のアーキテクチャーのどちらが優れているかは一概には言えないものの，SAGPoolの有効性が示唆された．  
+
+![Model](../image/Lee2019/Table4.PNG)  
+畳み込みの計算方法，アテンションの計算方法，アテンションの計算回数の異なるモデルで比較も行った．  
+
+![Model](../image/Lee2019/Fig3.PNG)  
+またノードの選択が行われるために，パラメータ数が抑えられることを検証した．
+
