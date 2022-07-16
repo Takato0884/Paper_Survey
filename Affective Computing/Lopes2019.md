@@ -1,6 +1,6 @@
 # Modelling Affect for Horror Soundscapes
 
-【Authors】Phil Lopes; Antonios Liapis; Georgios N. Yannakakis
+【Authors】Phil Lopes; Antonios Liapis; Georgios N. Yannakakis  
 【Publisher】IEEE Transactions on Affective Computing (Volume: 10, Issue: 2, April-June 1 2019)  
 【Submission】2019  
 【URL】[https://ieeexplore.ieee.org/document/7439777](https://ieeexplore.ieee.org/document/7903629)  
