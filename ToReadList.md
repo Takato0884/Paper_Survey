@@ -28,7 +28,7 @@ Ranking vs. Preference: A Comparative Study of Self-reporting
 Grounding Truth via Ordinal Annotation  
 連続値アノテーションは有害  
 
-A survey on emotional semantic image retrieval
+A survey on emotional semantic image retrieval  
 感情的意味画像検索  
 
 Collective indexing of emotions in images. A study in emotional information retrieval  
