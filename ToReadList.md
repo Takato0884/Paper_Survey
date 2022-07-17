@@ -34,3 +34,41 @@ A survey on emotional semantic image retrieval
 Collective indexing of emotions in images. A study in emotional information retrieval  
 感情情報検索  
 
+Speaker-sensitive emotion recognition via ranking: Studies on acted and spontaneous speech  
+感情認識のための新しいランキングモデル  
+
+Ranking emotional attributes with deep neural networks  
+RankNetと感情認識  
+
+Modeling enjoyment preference from physiological responses in a car racing game  
+ゲームと選好学習  
+
+Active Ranking using Pairwise Comparisons  
+ペアワイスからグローバルランクを特定  
+
+Efficient Ranking from Pairwise Comparisons    
+ペアワイスからグローバルランクを特定  
+
+Local-global ranking for facial expression intensity estimation  
+感情認識分野でペアワイスからグローバルランクを特定
+
+Multimodal Local-Global Ranking Fusion for Emotion Recognition  
+ローカルランキングとグローバルランキングの融合  
+
+Retrieving Categorical Emotions using a Probabilistic Framework to Define Preference Learning Samples  
+カテゴリアノテーションからランクアノテーションへ  
+
+A Study on Affect Model Validity: Nominal vs Ordinal Labels  
+連続値から序数ラベルへ  
+
+Variational Gaussian Process Auto-Encoder for Ordinal Prediction of Facial Action Units  
+ガウス過程エンコーダーと順序推定  
+
+Inter-Rater Reliability for Emotion Annotation in Human-Computer Interaction -- Comparison and Methodological Improvements  
+主観評価の信頼性を向上させるために  
+
+Deep Multimodal Fusion: Combining Discrete Events and Continuous Signals  
+マルチモーダルと選好学習  
+
+Boosting paired comparison methodology in measuring visual discomfort of 3DTV: performances of three different designs  
+ペア比較の削減  
