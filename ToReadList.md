@@ -72,3 +72,6 @@ Deep Multimodal Fusion: Combining Discrete Events and Continuous Signals
 
 Boosting paired comparison methodology in measuring visual discomfort of 3DTV: performances of three different designs  
 ペア比較の削減  
+
+Practical considerations on the use of preference learning for ranking emotional speech  
+音声感情認識において，絶対値からランクアノテーションへ
