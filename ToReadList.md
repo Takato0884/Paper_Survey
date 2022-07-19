@@ -74,4 +74,10 @@ Boosting paired comparison methodology in measuring visual discomfort of 3DTV: p
 ペア比較の削減  
 
 Practical considerations on the use of preference learning for ranking emotional speech  
-音声感情認識において，絶対値からランクアノテーションへ
+音声感情認識において，絶対値からランクアノテーションへ  
+
+Building a naturalistic emotional speech corpus by retrieving expressive behaviors from existing speech corpora  
+
+Defining emotionally salient regions using qualitative agreement method  
+
+Optimizing search engines using clickthrough data
