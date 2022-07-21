@@ -23,10 +23,16 @@ $$
 L(y^{(i)},z^{(i)}) = -\Sigma_{j=1}^{n} P_{y^{(i)}}(j) \log P_{z^{(i)}}(j)
 $$
 
-![Model](../image/Cao2007/algo1.png)  
+![Model](../image/Cao2007/algo1.PNG)  
 
 この損失関数を最小化する．
-## ４．主張の有効性検証
+## ４．主張の有効性検証  
+3つのデータセットで従来手法よりも良い精度が得られることを検証した．  
+
+![Model](../image/Cao2007/Figure1_2.PNG.PNG)  
+
+![Model](../image/Cao2007/Figure3.PNG.PNG)  
+
 ## ５．議論すべき点  
 NDCGを直接最適化することができるっぽい．  
 ## ６．参考  
