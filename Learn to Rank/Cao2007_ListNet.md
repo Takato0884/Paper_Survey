@@ -29,9 +29,9 @@ $$
 ## ４．主張の有効性検証  
 3つのデータセットで従来手法よりも良い精度が得られることを検証した．  
 
-![Model](../image/Cao2007/Figure1_2.PNG.PNG)  
+![Model](../image/Cao2007/Figure1_2.PNG)  
 
-![Model](../image/Cao2007/Figure3.PNG.PNG)  
+![Model](../image/Cao2007/Figure3.PNG)  
 
 ## ５．議論すべき点  
 NDCGを直接最適化することができるっぽい．  
