@@ -16,8 +16,30 @@ Automatic Readability Assessment (ARA), the task of assigning a reading level to
 ## ３．技術や手法のキモ  
 BERTをもとにしたペアワイズ手法を提案した．また評価に複数の指標を用いた．
 ## ４．主張の有効性検証  
-クラス分類モデル，回帰モデル，ランキングモデルをそれぞれ評価した．加えてそれぞれの異なるタスクのモデルをランキング指標で評価した．
+クラス分類モデル，回帰モデル，ペアワイズモデルをそれぞれ評価した．加えてそれぞれの異なるタスクのモデルをランキング指標で評価した．  
 
+・クラス分類モデル  
 
-## ５．議論すべき点  
+![Model](../image/Lee2022/Table1.PNG)  
 
+![Model](../image/Lee2022/Table2.PNG)  
+
+・回帰モデル  
+
+![Model](../image/Lee2022/Table3.PNG)  
+
+・ペアワイズモデル  
+
+![Model](../image/Lee2022/Table4.PNG)  
+
+・クラス分類モデルvs回帰モデルvsペアワイズモデル   
+
+![Model](../image/Lee2022/Table5.PNG)  
+
+さらに本研究では，クロスコーパス設定で，ペアワイズモデルと回帰モデルを評価した．  
+
+![Model](../image/Lee2022/Table6.PNG)  
+
+また，クロス言語のデータセットでのゼロショット設定で，ペアワイズモデルと回帰モデルを評価した． 
+
+![Model](../image/Lee2022/Table7.PNG)  
