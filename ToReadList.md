@@ -13,9 +13,6 @@ Ranking-Based Emotion Recognition for Music Organization and Retrieval
 Don’t Classify Ratings of Affect; Rank Them!  
 カテゴリアノテーションとランクアノテーション  
 
-Practical considerations on the use of preference learning for ranking emotional speech  
-連続値アノテーションとランクアノテーション
-
 Using Agreement on Direction of Change to Build Rank-Based Emotion Classifiers  
 ランキングアノテーション，時間変化
 
@@ -37,9 +34,6 @@ Collective indexing of emotions in images. A study in emotional information retr
 Speaker-sensitive emotion recognition via ranking: Studies on acted and spontaneous speech  
 感情認識のための新しいランキングモデル  
 
-Ranking emotional attributes with deep neural networks  
-RankNetと感情認識  
-
 Modeling enjoyment preference from physiological responses in a car racing game  
 ゲームと選好学習  
 
@@ -57,9 +51,6 @@ Multimodal Local-Global Ranking Fusion for Emotion Recognition
 
 Retrieving Categorical Emotions using a Probabilistic Framework to Define Preference Learning Samples  
 カテゴリアノテーションからランクアノテーションへ  
-
-A Study on Affect Model Validity: Nominal vs Ordinal Labels  
-連続値から序数ラベルへ  
 
 Variational Gaussian Process Auto-Encoder for Ordinal Prediction of Facial Action Units  
 ガウス過程エンコーダーと順序推定  
