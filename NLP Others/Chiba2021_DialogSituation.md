@@ -11,19 +11,19 @@ In recent years, dialogue systems have been applied to daily living. Such system
 ## １．研究概要
 視覚，音声，言語から対話の状況(Style, Place, Activity, Relation)を推定するタスクに取り組んだ．データセットには国語研の日本語日常対話コーパスを使用している．  
 
-![Model](../image/Chiba2022/Table1.PNG)  
+![Model](../image/Chiba2021/Table1.PNG)  
 
 ## ２．問題設定と解決した点
 これまで研究されてこなかった対話状況の認識タスクに取り組んだ．
 ## ３．技術や手法のキモ
 各モダリティの特徴量として，深層学習ベースの事前学習済みモデルから得られる埋め込み表現を使用している．また，対話の状況を認識する4つのタスク(Style, Place, Activity, Relation)をマルチタスクで学習した．  
 
-![Model](../image/Chiba2022/Fig3.PNG)  
+![Model](../image/Chiba2021/Fig3.PNG)  
 
 ## ４．主張の有効性検証  
 チャンスレートと各モダリティの組み合わせのモデルを比較した．  
 
-![Model](../image/Chiba2022/Table2.PNG)  
+![Model](../image/Chiba2021/Table2.PNG)  
 
 ## ５．議論すべき点
 外部アノテータが一人．GRUから系列特徴量を獲得する方法が不明瞭．交差検証していない．
