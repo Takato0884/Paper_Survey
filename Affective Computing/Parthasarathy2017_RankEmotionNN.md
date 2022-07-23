@@ -14,6 +14,11 @@ Studies have shown that ranking emotional attributes through preference learning
 Rank-SVMなどを用いて感情スコアのランキングに取り組んだ研究はこれまでにもあったが，このタスクに深層学習は適用されていなかった．
 本研究は，RankNetアルゴリズムで実装された深層学習モデルを使って，感情スコアのランキングに取り組んだ最初の研究である．
 ## ３．技術や手法のキモ
-RankNetにおいて，最低でもマージンtだけ離れているサンプル間でペアを作成することが，テストデータ(全ペア)のプリファレンス推定に有効であることを明らかにした．
+RankNetにおいて，最低でもマージンtだけ離れているサンプル間でペアを作成することが，テストデータ(全ペア)のプリファレンス推定に有効であることを明らかにした．  
+
+![Model](../image/Parthasarathy2017/Fig1.PNG)  
+
 ## ４．主張の有効性検証
-Precision＠ｋとKendall's tau coefficientを用いて，RankNetとRank-SVM, DNNregressionを比較した．
+Precision＠ｋとKendall's tau coefficientを用いて，RankNetとRank-SVM, DNNregressionを比較した．その結果，RankNetの優位性が示された．  
+
+![Model](../image/Parthasarathy2017/Table1.PNG)  
